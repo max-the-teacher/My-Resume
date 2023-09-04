@@ -1,0 +1,204 @@
+/* 01. Basic Styles */
+ html {
+    overflow-x: hidden;
+ }
+ body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+ }
+
+ h1 {
+    font-weight: bold;
+ }
+
+ h5 {
+    font-weight: 600;
+ }
+
+ span {
+    color: #1abc9c;
+    font-weight: bolder;
+    opacity: 1;
+ }
+
+ a {
+    cursor: pointer;
+    color: #1abc9c;
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration:none;
+    color: #1abc9c;
+    opacity: 0.9;
+ }
+
+ hr {
+    border-top: 5px solid #1abc9c;
+    width: 80px;
+ }
+ 
+ .colour-splash {
+    color: #1abc9c;
+ }
+
+/* 02. Intro */
+ .section-image {
+ 	background: #151515 url(https://cdn.wallpapersafari.com/13/70/NLX0xd.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display:table;
+ }
+
+ .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: .7;
+ }
+
+ .intro {
+    vertical-align: middle;
+    text-align: center;
+    display:table-cell;
+    transform: translateY(-2.1rem);
+}
+
+.intro .row {
+    margin-right: 0;
+    margin-left:0;
+}
+
+.intro h1 {
+    font-size: 84px;
+}
+
+.intro h5 {
+    color: #1abc9c;
+    font-size: 2.3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro span {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 0 10px;
+    font-weight: 100;
+}
+
+.section-image p {
+    font-weight: lighter;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* 03. Social Icons */
+.social {
+  margin: 0 10px;
+  padding-top: 1.3em;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.social a {
+  color: white;
+  text-decoration:none;
+  padding: 2em;
+}
+
+.social a:hover{
+  opacity: 0.6;
+}
+
+.social-footer {
+    position: block;
+    text-align: center;
+}
+
+.social-footer p{
+    font-size: large;
+}
+
+.social-footer .fa{
+    font-size: 2em !important;
+    color: white;
+    text-decoration: none;
+    padding: 0.6em;
+}
+
+
+/* 04. Icon Font and Section */
+ .fa {
+    font-size: 4em !important;
+    color:#fff;
+ }
+
+ #skills {
+    background: #151515 url(https://th.bing.com/th/id/R.c0b3b4672019e99c66cac30c31dfbd50?rik=s0%2bqUGhZWnmF1g&riu=http%3a%2f%2fwww.e-tapetki.pl%2ftapetki%2fduze%2f243969_kot-fotograficzny-aparat-nikon.jpg&ehk=aBGLYtSPFyp0bujYVtWrEDh3pjADwdH7gb1reX73QZE%3d&risl=&pid=ImgRaw&r=0) no-repeat center center;
+    height: auto;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* 05. Footer */
+footer {
+    display: block;
+    position: static;
+    text-align: center;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer p {
+    text-align: center;
+    padding: 15px;
+    opacity: 0.8;
+}
+ 
+/* Media Queries */
+@media (max-width: 480px) {
+    .social a {
+        padding: 0.4em;
+        font-size: 0.9em;
+    }
+
+    .social-footer {
+        position:block;
+        text-align: center;
+    }
+
+    .social-footer p{
+        position:block;
+        text-align: center;
+    }
+
+    .intro-desc {
+        font-size:1em;
+    }
+
+    .intro h1 {
+        font-size: 50px;
+        padding-top: 15px;
+    }
+
+    #skills {
+        background: #151515 url(https://th.bing.com/th/id/R.c0b3b4672019e99c66cac30c31dfbd50?rik=s0%2bqUGhZWnmF1g&riu=http%3a%2f%2fwww.e-tapetki.pl%2ftapetki%2fduze%2f243969_kot-fotograficzny-aparat-nikon.jpg&ehk=aBGLYtSPFyp0bujYVtWrEDh3pjADwdH7gb1reX73QZE%3d&risl=&pid=ImgRaw&r=0) no-repeat center center;
+        background-position: top center;
+    }
+}
